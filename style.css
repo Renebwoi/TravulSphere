@@ -147,6 +147,7 @@ main{
   color: white;
   display: grid;
   width: 80svw;
+  
 
   grid-template-columns: repeat(5, 1fr);
   gap: 2rem;
@@ -167,3 +168,28 @@ main{
   background-color: #1450CC;
   color: white;
 }
+
+.mini-contact{
+ display: grid;
+ grid-template-columns: 30% auto;
+ padding-top: 2rem;
+}
+
+.form{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  gap: 0.5rem;
+}
+.inner-form{
+  height: 50%;
+  background-color: #4A557F;
+
+  display: grid;
+  grid-template-columns: 60% 40%;
+  place-items: center;
+}
+/* .form>img{
+  float: right;
+} */
