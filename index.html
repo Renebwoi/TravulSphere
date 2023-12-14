@@ -62,7 +62,9 @@
         <strong class="Status">Booking Status</strong>
         <p>
         <input type="text" placeholder="Enter Ref Code" class="ref-code-input">
-        </p>     <p>
+        </p>     
+        
+        <p>
             <button id="btn3" type="button">Confirm Status</button>
         </p>
     </div>
@@ -169,30 +171,39 @@
       </div>
     </section>
 
-      <section>
-          <img src="images/unsplash_btqhtcEGziw.png" id="background_image" alt="bus_parck_image">
-
-          <p class="card_payment">
+    <section class="cards-background">
+         
+          <div class="card_payment payment-card">
+            <div class="cardinner">
               <img src="images/payment 1.png" id="card_image" alt="card_image">
               <strong class="payment">card payment</strong>
               <span class="payment_writeup">We accept instant master card, Visa card, and verve card</span>
-          </p>
-              <p class="ussd_payment">
-                  <img src="images/ussd 1.png" id="ussd" alt="ussd_image">
-                  <strong class="payment">USSD</strong>
-                  <span class="ussd_writeup">Dial any Bank USSD code to make payment directly.</span>
-              </p>
-              <p class="warning">
-                  <img src="images/online-banking 1.png" id="warning_image" alt="warning_image">
-                  <strong class="warn">warning</strong>
-                  <span class="ussd_writeup">Dont make payment to individual account, only book on our website or terminal.</span>
-              </p>
-      </section>
+            </div>
+          </div>
 
-      <main>
+            <div class="ussd_payment payment-card">
+                <div class="cardinner">
+                <img src="images/ussd 1.png" id="ussd" alt="ussd_image">
+                <strong class="payment">USSD</strong>
+                <span class="ussd_writeup">Dial any Bank USSD code to make payment directly.</span>
+            </div>
+            </div>
+
+            <div class="warning payment-card">
+                <div class="cardinner">
+                <img src="images/online-banking 1.png" id="warning_image" alt="warning_image">
+                <strong class="warn">warning</strong>
+                <span class="ussd_writeup">Dont make payment to individual account, only book on our website or terminal.</span>
+            </div>
+            </div>
+    </section>
+
+      <main class="whyChoose">
           <div class="travulsphere">
+            <article>
               <h3>WHY CHOOSE</h3>
               <b class="travul">TRAVULSPHERE?</b>
+            </article>
 
               <article>
                   Travulsphere makes booking bus trips easier and more enjoyable. the website is designed to be 
@@ -204,104 +215,159 @@
               </article>
               <img src="images/Low angle shot of a bus stop sign.png" id="bus_sign" alt="bus_sign">
           </div>
+
+        <div class="Sponsors">
            <b class="our_sponsors">our sponsors</b>
            <img src="" id="tenece" alt="tenece_logo">
            <img src="" id="GENESYS" alt="GENESYS_logo">
            <img src="" id="CARADEL" alt="CARADEL_logo">
            <img src="" id="Drivesl" alt="Drivesl_logo">
+        </div>
       </main>
 
-      <section>
-          <strong class="terminals">POPULAR TERMINALS</strong>
-          <p class="map1">
-              <img src="" id="Benin_city_map" alt="Benin_city_map">
-              <span class="location1">Benin city central Bus  <br> Terminal <br> parking garage 
-             <p>
-              osakwe, Benin 
-             </p>
-             osakwe-07094387668
-              </span> 
-          </p>
+      <section class="Terminals">
+        <h3 class="terminals-heading">POPULAR TERMINALS</h3>
 
-          <p class="map2">
+        <div class="firstTerminal DTerminals">
+          
+              <img src="" id="Benin_city_map" alt="Benin_city_map">
+              
+            <div class="map1">
+              <p class="location1">Benin city central Bus Terminal parking garage </p>
+              <p>Osakwe, Benin </p>
+             
+             <p>Osakwe-07094387668 </p>
+            </div>
+        </div>
+
+        <div class="secondTerminal DTerminals">
+          
               <img src="" id="utako_map" alt="utako_map">
-              <span class="location2">Utako Motor and Bus  <br> Terminal <br> Bus depot
+
+              <div class="map2">  
+
+              <p class="location2">Utako Motor and Bus Terminal Bus depot 
+            </p>
+
              <p>
               Utako, Abuja 
              </p>
-             Utako-09166490790
-              </span> 
-          </p>
 
-          <p class="map3">
-              <img src="" id="Ajah_map" alt="Ajah_map">
-              <span class="location3">KM  22, Epe-Expressway,  <br> Abrahram Adesanya Est. <br> junction,Ajah,Lagos.
              <p>
-              Ajah,Lagos
-             </p>
-             Ajah-08067234591
-              </span> 
-          </p>
+             Utako-09166490790
+            </p>
+              
+          </div>
+        </div>
 
-          <di class="bus_type">
+        <div class="thirdTerminal DTerminals">
+          
+              <img src="" id="Ajah_map" alt="Ajah_map">
+            
+            <div class="map3">
+            <p class="location3">KM  22, Epe-Expressway, Abrahram Adesanya Est. junction, Ajah,Lagos.
+            </p>
+
+            <p>
+            Ajah,Lagos
+            </p>
+
+            <p>
+            Ajah-08067234591
+            </p>
+            
+          </div>
+        </div>
+        </section>
+
+        
+        <section class="bus-type-intro">
+          <div class="bus_type">
               WHICH BUS <br> TYPE IS RIGHT FOR ME?
-          </di>
-          <span id="bus_discription">
+          </div>
+          <p id="bus_discription">
               At Travulsphere. we offer a wide range of modern travel options so customers can pick which option 
               meets their current needs.  
-          </span>
+          </p>
+        </section>
 
-          <div class="bus1">
-          <img src="images/Rectangle 8.png" id="sienna_bus" alt="sienna_bus">
-          <span id="sienna">sienna</span>
+        <section class="bus-type-body">
+          <div class="bus1 busDiv">
+
+            <div class="busDivIn1 busDi">
+          <!-- <img src="images/Rectangle 8.png" id="sienna_bus" alt="sienna_bus"> -->
+        </div>
+
+          <p id="sienna">Sienna</p>
       </div>
 
-      <div class="bus2">
-          <img src="images/Rectangle 9.png" id="Coach_bus" alt="Coach_bus">
-          <span id="sienna">Coach</span>
+      <div class="bus2 busDiv">
+        <div class="busDivIn2 busDi">
+          <!-- <img src="images/Rectangle 9.png" id="Coach_bus" alt="Coach_bus"> -->
+        </div>
+
+          <p id="sienna">Coach</p>
       </div>
 
-      <div class="bus3">
-          <img src="images/Rectangle 10.png" id="Hiace_bus" alt="Hiace_bus">
-          <span id="sienna">Hiace</span>
+      <div class="bus3 busDiv">
+        <div class="busDivIn3 busDi">
+          <!-- <img src="images/Rectangle 10.png" id="Hiace_bus" alt="Hiace_bus"> -->
+        </div>
+
+          <p id="Sienna">Hiace</p>
       </div>
       </section>
 
-      <footer>
+    <footer>
+
+
+
+    <div class="feedback-section">
         <b class="feedbacks">Feedbacks</b>
-        <p>
-        <hr class="hr1">
-      </p>
-        <div class="text_box">
-          <input type="text" id="text_box1" placeholder="Title"required>
-          <input type="text" id="text_box2" placeholder="Enter Name"required>
-          <input type="text" id="text_box3" placeholder="Enter Email"required>
-          <input type="text" id="text_box4" placeholder=""required>
-        </div> 
+        <div class="hr"></div>
+
+        <form class="text_box">
+          <input type="text" id="text_box1" placeholder="Title" required>
+          <input type="text" id="text_box2" placeholder="Enter Name" required>
+          <input type="text" id="text_box3" placeholder="Enter Email" required>
+          <input type="text" id="text_box4" placeholder="." required>
+          <button type="submit" class="submitBtn">submit</button>
+        </form> 
+
+    </div>
+
+
+
+
+    <div class="media-section">
 
         <b class="social_media">Social media</b>
-        <p>
-          <hr class="hr2">
-        </p>
+          <div class="hr"></div>
+
         <div class="social_media_icons">
           <div>
-           <img src="" alt="facebook_icon"> <p>Facebook</p>
+           <img src="" alt="facebook_icon"> 
+           <p>Facebook</p>
           </div>
 
           <div>
-              <img src="" alt="Twitter_icon"> <p>Twitter</p>
+              <img src="" alt="Twitter_icon">
+               <p>Twitter</p>
              </div>
 
              <div>
-              <img src="" alt="Instagram_icon"> <p>Instagram</p>
+              <img src="" alt="Instagram_icon"> 
+              <p>Instagram</p>
              </div>
 
         </div>
+    </div>
 
+
+    <div class="contact-section">
         <b class="Contact_Us">Contact Us</b>
-        <p>
-          <hr class="hr3">
-        </p>
+        <div class="hr"></div>
+
         <div class="Contact_icons">
           <div>
            <img src="" alt="time_icon"> <p>0500am-0900pm</p>
@@ -321,9 +387,15 @@
 
         </div>
 
-        <div id="submit_button">
+    </div>
+
+    <div class="quickLinksSection">
+
+    </div>
+
+        <!-- <div id="submit_button">
           <button type="submit">submit</button>
-        </div>
+        </div> -->
       </footer>
 
 </body>
