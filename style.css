@@ -175,11 +175,11 @@ main.first{
   
 
   grid-template-columns: repeat(5, 1fr);
-  gap: 2rem;
+  gap: 2svw;
   align-items: space-around;
 }
 .booking{
-  padding: 1.5rem 1.5rem 0rem;
+  padding: 1.5vw 1vw 0rem;
 }
 .ref-code-input{/* ::placeholder to edit the place holder*/
   width: 150px;
@@ -201,7 +201,7 @@ main.first{
  display: grid;
  grid-template-columns: 1fr 1fr;
  padding-top: 2rem;
- overflow: hidden;
+ /* overflow: hidden; */
 }
 
 .form{
@@ -457,4 +457,88 @@ footer{
   border-radius: 30px;
   border: none;
   height: 30px;
+}
+
+@media screen and (max-width: 995px){
+  main.first{
+    grid-template-columns: 1fr;
+    height: 210svh;
+  }
+
+  .grid-sprite{
+    top: -100px;
+    left: 0px;
+  }
+  .Booking-section{
+    box-sizing: border-box;
+    grid-template-columns: 1fr;
+    padding: 10px 30px;
+    place-items: center;
+  }
+  .mini-contact{
+    width: 200px;
+  }
+  .form{
+    height: 300px;
+  }
+  .services-info{
+    width: 80svw;
+  }
+  .services{
+    width: 80svw;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  .cards-background{
+    grid-template-columns: auto;
+  }
+  .cardinner{
+    height: fit-content;
+  }
+
+
+  #bus_sign{
+    display: none;
+  }
+  .travulsphere{
+    grid-template-columns: auto;
+    text-align: center;
+  }
+  .travulsphere article:nth-of-type(1){
+    text-align: center;
+  }
+
+  .Sponsors{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+
+  .Terminals{
+    display: none;
+  }
+
+  .bus-type-intro{
+    grid-template-columns: auto;
+  }
+  .bus_type{
+    text-align: center;
+  }
+  .bus-type-body{
+    grid-template-columns: auto;
+    overflow: scroll;
+  }
+
+  .busDiv{
+    min-height: 350px;
+  }
+
+  footer{
+    grid-template-columns: auto;
+    row-gap: 50px;
+  }
 }
