@@ -2,6 +2,7 @@ html {
   height: 100%;
   width: 100%;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 body{
@@ -331,6 +332,7 @@ main.whyChoose{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   place-items: center;
+  column-gap: 20px;
 }
 .terminals-heading{
   grid-column: 1/4;

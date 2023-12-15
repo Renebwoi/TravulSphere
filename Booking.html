@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="booking.css">
+    <title>Booking Selection</title>
 </head>
 <body>
-    <div class="top">
+    <!-- <div class="top">
         <nav>
             <div class="logo"><img src="images/BRAND LOGO 1.png" alt="logo"/></div>
             <ul>
@@ -30,9 +31,9 @@
 
         <input type="radio" id="radiobox2" name="circle" value="radio2"> <label for="round_trip">Round Trip</label>
     </p>
-</div>
+</div> -->
 
-    <footer>
+    <!-- <footer>
         <b class="feedbacks">Feedbacks</b>
         <p>
         <hr class="hr1">
@@ -89,6 +90,160 @@
         <div id="submit_button">
           <button type="submit">submit</button>
         </div>
-      </footer>
+      </footer> -->
+
+      <div class="top">
+        <nav>
+            <!-- <div class="logo"><img src="images/BRAND LOGO 1.png" alt="logo"/></div> -->
+            <img src="images/BRAND LOGO 1.png" alt="logo" class="logo"/>
+
+            <ul class="nav-span">
+                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="contactpage.html">Contacts</a></li>
+            </ul>
+
+                <a href="/signUp.html" class="signUpContainer">Sign Up</a>
+                <!-- <div class="Profile"><img src="images/Profile.png" alt="Profile logo"/></div> -->
+                <img src="images/Profile.png" alt="Profile logo" class="Profile"/>
+
+        </nav>
+    </div>
+
+    <div class="booking-tab">
+      <h1>Booking</h1>
+    </div>
+
+    <div class="booking-pointers">
+      <div class="firstpointer">
+        <h3> Local Trips</h3>
+      </div>
+      <div class="otherpointers">
+        <h3> Enugu to Lagos/Jibowu </h3>
+        <h3> No of Adult - 2</h3>
+        <h3> No of children - 2</h3>
+        <h3> Date 2023-12-08</h3>
+      </div>
+    </div>
+
+    <div class="options-select">
+      <div class="trip-radio-bar">
+        <input type="radio" id="radiobox1" name="circle" value="radio1" title="one way trip"> <label for="one_way_trip">one way trip</label>
+
+        <input type="radio" id="radiobox2" name="circle" value="radio2" title="Round trip"> <label for="round_trip">Round Trip</label>
+      </div>
+
+      <p> Departure State</p>
+      <p> Terminal</p>
+      <p> Destination</p>
+
+      <select name="Departure" id="departureState" class="selectBoxes">
+        <option value="Enugu">Enugu</option>
+        <option value="Anambra">Anambra</option>
+        <option value="Lagos">Lagos</option>
+      </select>
+
+      <select name="terminal" id="terminal" class="selectBoxes">
+        <option value="PeacePark">Peace Park</option>
+        <option value="Globis">Globis</option>
+        <option value="Odeson">Odeson Motors</option>
+      </select>
+
+      <select name="destination" id="destination" class="selectBoxes">
+        <option value="Enugu">Enugu</option>
+        <option value="Anambra">Anambra</option>
+        <option value="Lagos">Lagos</option>
+      </select>
+
+      <p> No of adult</p>
+      <p> No of Children (ages 2-10)</p>
+      <p> Date</p>
+
+      <select name="AdultAmount" id="AdultAmoun" class="selectBoxes">
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+        <option value="4"> Four</option>
+      </select>
+
+      <select name="ChildAmount" id="ChildAmount" class="selectBoxes">
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+        <option value="4"> Four</option>
+      </select>
+
+      <!-- <select name="destination" id="destination">
+        <option value="Enugu">Enugu</option>
+        <option value="Anambra">Anambra</option>
+        <option value="Lagos">Lagos</option>
+      </select> -->
+      <input type="date" id="dateOption" title="date" class="selectBoxes">
+
+      <button type="submit" id="ModifyButton"> Modify</button>
+    </div>
+
+    <div class="busList">
+
+      <div class="busCard">
+
+        <div class="bus-Image image1"></div>
+
+        <div class="BusInfo">
+          <p>Sienna 1st Bus</p>
+          <p><span class="Ac">A/C</span> Enugu to Lagos-Jibowu</p>
+          <p class="availableSeats"> (5 seats available)</p>
+          <p class="busPrice"> Adult: <span class="AdultPrice">31,825</span> Child: <span class="ChildPrice">25,125</span></p>
+        </div>
+
+        <div class="busFareDiv">
+          <p class="deparTime"> 6:00</p>
+          <p class="BusFare"> BusFare: 26,000</p>
+          <button class="payFare" type="button"> Pay Fare</button>
+        </div>
+
+      </div>
+
+      <div class="busCard">
+
+        <div class="bus-Image image2"></div>
+
+        <div class="BusInfo">
+          <p>HIACE ULTRA 1st Bus</p>
+          <p><span class="Ac">A/C</span> Enugu to Lagos-Jibowu</p>
+          <p class="availableSeats"> (8 seats available)</p>
+          <p class="busPrice"> Adult: <span class="AdultPrice">24,700</span> Child: <span class="ChildPrice">19,500</span></p>
+        </div>
+
+        <div class="busFareDiv">
+          <p class="deparTime"> 7:00</p>
+          <p class="BusFare"> BusFare: 33,500</p>
+          <button class="payFare" type="button"> Pay Fare</button>
+        </div>
+
+      </div>
+
+      <div class="busCard">
+
+        <div class="bus-Image image3"></div>
+
+        <div class="BusInfo">
+          <p>Smart Coach 1st Bus</p>
+          <p><span class="Ac">A/C</span> Enugu to Lagos-Jibowu</p>
+          <p class="availableSeats"> (15 seats available)</p>
+          <p class="busPrice"> Adult: <span class="AdultPrice">11,825</span> Child: <span class="ChildPrice">9,125</span></p>
+        </div>
+
+        <div class="busFareDiv">
+          <p class="deparTime"> 8:00</p>
+          <p class="BusFare"> BusFare: 13,500</p>
+          <button class="payFare" type="button"> Pay Fare</button>
+        </div>
+
+      </div>
+
+    </div>
+
 </body>
 </html>

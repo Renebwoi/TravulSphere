@@ -1,0 +1,231 @@
+html {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  *{
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(248, 248, 248);
+  }
+  
+  .logo{
+    width: 100px;
+    height: 140%;
+  }
+  /* .top{
+    height: 6rem;
+  } */
+  .top>nav{
+    display: grid;
+    height: 5rem;
+    background-color: white;
+    overflow: hidden;
+    gap: 1.5rem;
+    place-items: center;
+  
+    grid-template-columns: repeat(9, 1fr);
+  }
+  .top>nav>ul{
+    list-style-type: none;
+    display: flex;
+    column-gap: 1.5rem;
+    align-items: center;
+  }
+  .top>nav>ul>li>a{
+    text-decoration: none;
+    color: black;
+  }
+  
+  .signUpContainer{
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+  
+    background-color: blue;
+    border-radius: 30px;
+    width: 100px;
+    height: 30px;
+    color: white;
+    
+  }
+  
+  .nav-span{
+    grid-column: 4/8;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .Profile{
+    width: 40%;
+  }
+ 
+  
+
+
+  .booking-tab{
+    height: 6rem;
+    width: 85svw;
+    background: linear-gradient(128deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 10%, rgb(123, 176, 255) 10%, rgba(13,27,80,1) 45%, rgb(123, 176, 255) 45%, rgba(9,32,228,1) 100%); 
+
+    display: grid;
+    align-items: center;
+    padding-left: 50px;
+    margin-bottom: 30px;
+
+  }
+
+  .booking-tab>h1{
+    color: white;
+  }
+
+  .booking-pointers{
+    width: 85svw;
+    height: 3rem;
+    
+    display: grid;
+    grid-template-columns: 20% 80%;
+  }
+  .firstpointer{
+    width: 100%;
+    height: 100%;
+    background-color: aliceblue;
+    border-radius: 10px;
+
+    display: grid;
+    place-items: center;
+  }
+  .otherpointers{
+    width: 100%;
+    height: 100%;
+    background-color: #1450CC;
+    border-radius: 10px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+    column-gap: 10px;
+    padding-left: 10px;
+  }
+  .options-select{
+    width: 85svw;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    background-color: rgb(243, 246, 248);
+    border-radius: 20px;
+    padding: 20px;
+
+  }
+.trip-radio-bar{
+    grid-column: 1/4;
+}
+
+
+.selectBoxes{
+    width: 100%;
+    height: 40px;
+}
+#ModifyButton{
+    width: 40%;
+    height: 30px;
+    background-color: chocolate;
+    border-style: none;
+    border-radius: 10px;
+}
+
+
+.busList{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+    /* overflow: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none; */
+
+    width: 85svw;
+    height: fit-content;
+}
+.container::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+.busCard{
+    width: 70svw;
+    height: 200px;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0 0 2px rgb(102, 102, 102);
+
+    display: grid;
+    grid-template-columns: 19% 60% 19%;
+    column-gap: 2%;
+    align-items: center;
+    padding: 10px;
+    
+}
+.bus-Image{
+    background-color: white;
+    width: 13svw;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+.BusInfo{
+    padding-left: 10%;
+}
+.Ac{
+    background-color: rgb(8, 184, 8);
+    color: white;
+}
+.availableSeats{
+    text-align: center;
+}
+.busPrice{
+    margin-top: 30px;
+}
+.AdultPrice,
+.ChildPrice{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: rgb(8, 184, 8);
+}
+
+.deparTime{
+    color: rgb(136, 32, 32);
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+.payFare{
+    margin-top: 40px;
+  width: 100px;
+  height: 30px;
+  border-style: none;
+  border-radius: 10px;
+  background-color: blue;
+}
+
+.image1{
+    background-image: url(images/Rectangle\ 8.png);
+    background-size: 200px 200px;
+    background-position: 10% 1%;
+    background-repeat: no-repeat;
+}
+.image2{
+    background-image: url(images/Rectangle\ 9.png);
+    background-size: 200px 200px;
+    background-position: 10% 1%;
+    background-repeat: no-repeat;
+}
+.image3{
+    background-image: url(images/Rectangle\ 10.png);
+    background-size: 200px 200px;
+    background-position: 10% 1%;
+    background-repeat: no-repeat;
+}
