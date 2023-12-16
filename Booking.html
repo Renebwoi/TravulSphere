@@ -108,8 +108,32 @@
                 <!-- <div class="Profile"><img src="images/Profile.png" alt="Profile logo"/></div> -->
                 <img src="images/Profile.png" alt="Profile logo" class="Profile"/>
 
+                <div class="conpressedNavIcons" onclick="navDisplay(0)">
+                  <div class="bar b1"></div>
+                  <div class="bar b2"></div>
+                  <div class="bar b3"></div>
+              </div>
+
         </nav>
     </div>
+
+    
+
+    <div class="mobile-nav">
+      <div class="cancelNav" onclick="navDisplay(1)">
+          Cancel
+      </div>
+      <nav>
+          <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="contactpage.html">Contacts</a></li>
+          </ul>
+      </nav>
+  </div>
+
+
 
     <div class="booking-tab">
       <h1>Booking</h1>
@@ -129,7 +153,7 @@
 
     <div class="options-select">
       <div class="trip-radio-bar">
-        <input type="radio" id="radiobox1" name="circle" value="radio1" title="one way trip"> <label for="one_way_trip">one way trip</label>
+        <input type="radio" id="radiobox1" name="circle" value="radio1" title="one way trip"> <label for="one_way_trip">One way trip</label>
 
         <input type="radio" id="radiobox2" name="circle" value="radio2" title="Round trip"> <label for="round_trip">Round Trip</label>
       </div>
@@ -245,5 +269,101 @@
 
     </div>
 
+
+    <footer>
+
+
+
+      <div class="feedback-section">
+          <b class="feedbacks">Feedbacks</b>
+          <div class="hr"></div>
+  
+          <form class="text_box">
+            <input type="text" id="text_box1" placeholder="Title" required>
+            <input type="text" id="text_box2" placeholder="Enter Name" required>
+            <input type="text" id="text_box3" placeholder="Enter Email" required>
+            <input type="text" id="text_box4" placeholder="." required>
+            <button type="submit" class="submitBtn">submit</button>
+          </form> 
+  
+      </div>
+  
+  
+  
+  
+      <div class="media-section">
+  
+          <b class="social_media">Social media</b>
+            <div class="hr"></div>
+  
+          <div class="social_media_icons">
+            <div>
+             <img src="" alt="facebook_icon"> 
+             <p>Facebook</p>
+            </div>
+  
+            <div>
+                <img src="" alt="Twitter_icon">
+                 <p>Twitter</p>
+               </div>
+  
+               <div>
+                <img src="" alt="Instagram_icon"> 
+                <p>Instagram</p>
+               </div>
+  
+          </div>
+      </div>
+  
+  
+      <div class="contact-section">
+          <b class="Contact_Us">Contact Us</b>
+          <div class="hr"></div>
+  
+          <div class="Contact_icons">
+            <div>
+             <img src="" alt="time_icon"> <p>0500am-0900pm</p>
+            </div>
+  
+            <div>
+                <img src="" alt="phone_icon"> <p>(+234) 6000-131-500</p>
+               </div>
+  
+               <div>
+                <img src="" id="message_icon" alt="message_icon"> <p>(+234) 5000-461-300</p>
+               </div>
+  
+               <div>
+                <img src="" id="email_icon" alt="email_icon"> <p>travulsphere@gmail.com</p>
+               </div>
+  
+          </div>
+  
+      </div>
+  
+      <div class="quickLinksSection">
+          <div class="kwiklinks">
+          <b>Quick Links</b>
+          <div class="hr"></div>
+      </div>
+  
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Contact</a>
+          <a href="#">Terminals</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">FAQs</a>
+          <a href="#">Terms and Conditions</a>
+  
+      </div>
+  
+          <!-- <div id="submit_button">
+            <button type="submit">submit</button>
+          </div> -->
+        </footer>
+
+        
+<script src="script.js"></script>
 </body>
 </html>

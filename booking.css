@@ -18,7 +18,7 @@ html {
   
   .logo{
     width: 100px;
-    height: 140%;
+    height: 140px;
   }
   /* .top{
     height: 6rem;
@@ -63,7 +63,14 @@ html {
     justify-content: space-around;
   }
   .Profile{
-    width: 40%;
+    width: 50px;
+  }
+  .conpressedNavIcons{
+    display: none;
+  }
+  
+  .mobile-nav{
+    display: none;
   }
  
   
@@ -78,6 +85,7 @@ html {
     align-items: center;
     padding-left: 50px;
     margin-bottom: 30px;
+    z-index: 2;
 
   }
 
@@ -228,4 +236,185 @@ html {
     background-size: 200px 200px;
     background-position: 10% 1%;
     background-repeat: no-repeat;
+}
+
+
+
+footer{
+    /* height: 250px; */
+    background-color: #1450CC;
+  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+    padding: 20px;
+    margin-top: 40px;
+    /* overflow: hidden; */
+  }
+  .hr{
+    width: 100px;
+    height: 5px;
+    background-color: black;
+    border-radius: 30px;
+  }
+  
+  .text_box{
+    height: 100%;
+  }
+  #text_box1,
+  #text_box2,
+  #text_box3{
+    width: 70%;
+    height: 50px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding-left: 10px;
+  }
+  #text_box1{
+    margin-top: 25px;
+  }
+  #text_box4{
+    width: 70%;
+    height: 100px;
+  
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    display: block;
+  }
+  .submitBtn{
+    width: 30%;
+    background-color: #F69F46;
+    border-radius: 30px;
+    border: none;
+    height: 30px;
+  }
+  
+  .quickLinksSection{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 150px;
+    column-gap: 20px;
+    row-gap: 10px;
+  }
+  .kwiklinks{
+    grid-column: 1/3;
+  }
+  .quickLinksSection a{
+    text-decoration: none;
+    color: black;
+  }
+
+
+
+@media screen and (max-width: 995px){
+
+
+    footer{
+        grid-template-columns: auto;
+        row-gap: 50px;
+      }
+    
+      /*for the navigation*/
+      .top>nav{
+        width: 90svw;
+        position: relative;
+      }
+    
+      .top>nav>ul{
+        display: none;
+      }
+      .signUpContainer{
+        display: none;
+      }
+      .Profile{
+        position: absolute;
+        right: 0px;
+      }
+      .logo{
+        position: absolute;
+        margin: auto;
+      }
+    
+      .conpressedNavIcons{
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+        width: 40px;
+    
+        position: absolute;
+        left: 0px;
+      }
+      .bar{
+        
+        height: 5px;
+        background-color: black;
+        border-radius: 5px;
+      }
+      .b1{
+        width: 30px;
+      }
+      .b2{
+        width: 25px;
+      }
+      .b3{
+        width: 20px;
+      }
+    
+      .mobile-nav{
+        display: none;
+        position: fixed;
+        width: 90vw;
+        height: fit-content;
+        z-index: 5;
+    
+        background-color: aliceblue;
+        place-items: center;
+        border-radius: 10px;
+      }
+      .mobile-nav ul{
+        list-style-type: none;
+        padding: 0px;
+      }
+      .mobile-nav ul>li>a{
+        text-decoration: none;
+        color: black;
+      }
+    
+      .cancelNav{
+        position: absolute;
+        right: 5px;
+        top: 10px;
+      }
+
+      /* width fixing */
+      .booking-pointers{
+        width: 95svw;
+        margin-bottom: 40px;
+      }
+      .otherpointers{
+        font-size: 0.5rem;
+      }
+      #ModifyButton{
+        width: 55px;
+    }
+
+    .options-select{
+        width: 95svw;
+    }
+
+    .busCard{
+        width: 80svw;
+        grid-template-columns: 19% 56% 23%;
+    }
+    .payFare{
+        width: fit-content;
+        width: -moz-fit-content;
+
+    }
+    .hr{
+        margin-bottom: 20px;
+    }
 }
