@@ -1,10 +1,12 @@
 html {
-  height: 100%;
+  /* height: 100%; */
   width: 100%;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-
+.top{
+  position: relative;
+}
 body{
   display: flex;
   flex-direction: column;
@@ -55,7 +57,14 @@ body{
   justify-content: space-around;
 }
 .Profile{
-  width: 40%;
+  width: 50px;
+}
+.conpressedNavIcons{
+  display: none;
+}
+
+.mobile-nav{
+  display: none;
 }
 
 
@@ -66,7 +75,7 @@ main.first{
   grid-template-columns: 40% 56%;
   column-gap: 4%;
   place-items: center;
-  height: 140svh;/* was 150*/
+  height: 700px;/* was 150*/
   width: 80svw;
   margin: 0 auto;
   overflow: hidden;
@@ -89,7 +98,7 @@ main.first{
 
 #picture1{
   width: 100%;
-  height: 70%;
+  height: 490px;
   /* max-width: 400px; */
 
   position: relative;
@@ -106,7 +115,7 @@ main.first{
   
   position: absolute;
   top: 120px;/* change to percentage if it doesnt work*/
-  right: 1vw;
+  right: 20px;
 
   
   overflow: hidden;
@@ -263,7 +272,7 @@ main.first{
 
 .cards-background{
   width: 80svw;
-  height: 140svh;
+  height: 700px;
   background-image: url("images/unsplash_btqhtcEGziw.png");
   background-size: cover;
 
@@ -279,10 +288,10 @@ main.first{
   align-items: center;
 }
 .cardinner{
-  background-color: rgba(236, 238, 247, 0.295);
+  background-color: rgba(236, 238, 247, 0.6);
   width: 90%;
   border-radius: 30px;
-  height: 200px;
+  height: 230px;
   box-sizing: border-box;
 
   display: flex;
@@ -299,7 +308,7 @@ main.whyChoose{
   margin-top: 60px;
 }
 .travulsphere{
-  width: 60svw;
+  width: 70svw;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 
@@ -432,7 +441,7 @@ footer{
 #text_box2,
 #text_box3{
   width: 70%;
-  height: 10%;
+  height: 50px;
   margin-bottom: 10px;
   border-radius: 10px;
   box-sizing: border-box;
@@ -443,7 +452,7 @@ footer{
 }
 #text_box4{
   width: 70%;
-  height: 25%;
+  height: 100px;
 
   margin-bottom: 10px;
   border-radius: 10px;
@@ -459,12 +468,30 @@ footer{
   height: 30px;
 }
 
+.quickLinksSection{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 150px;
+}
+.kwiklinks{
+  grid-column: 1/3;
+}
+.quickLinksSection a{
+  text-decoration: none;
+  color: black;
+}
+
 @media screen and (max-width: 995px){
+
+
   main.first{
     grid-template-columns: 1fr;
     height: 210svh;
+    width: 95svw;
   }
-
+  .imageContainer{
+    justify-content: center;
+  }
   .grid-sprite{
     top: -100px;
     left: 0px;
@@ -474,6 +501,7 @@ footer{
     grid-template-columns: 1fr;
     padding: 10px 30px;
     place-items: center;
+    width: 95svw;
   }
   .mini-contact{
     width: 200px;
@@ -485,7 +513,7 @@ footer{
     width: 80svw;
   }
   .services{
-    width: 80svw;
+    width: 95svw;
     display: flex;
     flex-direction: column;
     row-gap: 30px;
@@ -493,6 +521,8 @@ footer{
 
   .cards-background{
     grid-template-columns: auto;
+    width: 95svw;
+    border-radius: 40px;
   }
   .cardinner{
     height: fit-content;
@@ -540,5 +570,76 @@ footer{
   footer{
     grid-template-columns: auto;
     row-gap: 50px;
+  }
+
+  /*for the navigation*/
+  .top>nav{
+    width: 80svw;
+  }
+
+  .top>nav>ul{
+    display: none;
+  }
+  .signUpContainer{
+    display: none;
+  }
+  .Profile{
+    position: absolute;
+    right: 0px;
+  }
+  .logo{
+    position: absolute;
+    margin: auto;
+  }
+
+  .conpressedNavIcons{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    width: 40px;
+
+    position: absolute;
+    left: 0px;
+  }
+  .bar{
+    
+    height: 5px;
+    background-color: black;
+    border-radius: 5px;
+  }
+  .b1{
+    width: 30px;
+  }
+  .b2{
+    width: 25px;
+  }
+  .b3{
+    width: 20px;
+  }
+
+  .mobile-nav{
+    display: grid;
+    position: fixed;
+    width: 90vw;
+    height: fit-content;
+    z-index: 5;
+
+    background-color: aliceblue;
+    place-items: center;
+    border-radius: 10px;
+  }
+  .mobile-nav ul{
+    list-style-type: none;
+    padding: 0px;
+  }
+  .mobile-nav ul>li>a{
+    text-decoration: none;
+    color: black;
+  }
+
+  .cancelNav{
+    position: absolute;
+    right: 5px;
+    top: 10px;
   }
 }
