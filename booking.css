@@ -291,6 +291,10 @@ footer{
     border: none;
     height: 30px;
   }
+  .sm_icons{
+    display: flex;
+    align-items: center;
+  }
   
   .quickLinksSection{
     display: grid;
@@ -315,6 +319,8 @@ footer{
     footer{
         grid-template-columns: auto;
         row-gap: 50px;
+        display: grid;
+        place-items: center;
       }
     
       /*for the navigation*/
@@ -367,7 +373,7 @@ footer{
         display: none;
         position: fixed;
         width: 90vw;
-        height: fit-content;
+        height: 250px;
         z-index: 5;
     
         background-color: aliceblue;
@@ -377,6 +383,10 @@ footer{
       .mobile-nav ul{
         list-style-type: none;
         padding: 0px;
+
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
       }
       .mobile-nav ul>li>a{
         text-decoration: none;
@@ -407,7 +417,14 @@ footer{
 
     .busCard{
         width: 80svw;
-        grid-template-columns: 19% 56% 23%;
+        grid-template-columns: 100%;
+        height: auto;
+        row-gap: 20px;
+    }
+    .bus-Image{
+        min-width: 100px;
+        min-height: 100px;
+        background-size: cover;
     }
     .payFare{
         width: fit-content;
@@ -416,5 +433,16 @@ footer{
     }
     .hr{
         margin-bottom: 20px;
+    }
+
+
+    .Contact_icons,
+    .social_media_icons{
+        display: grid;
+        row-gap: 20px;
+    }
+    .Contact_icons div{
+        display: flex;
+        column-gap: 30px;
     }
 }
