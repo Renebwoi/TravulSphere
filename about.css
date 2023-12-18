@@ -1,0 +1,144 @@
+h1{
+    border: 1px;
+    padding: 20px;
+    background-color: skyblue;
+    color: aliceblue;
+}
+.time-icon{
+    font-size: 40px;
+}
+.about-us{
+    border: 1px black solid;
+    width: 700px;
+    margin-left: auto; margin-right: auto;
+    padding: 10px 50px;
+    border-radius: 1rem;
+
+}
+.container {
+    display: flex;
+    /* margin-left: 170px; */
+    margin-top: 40px;
+    justify-content: center;
+    
+
+}
+.vision {
+border: 1px black solid;
+width: 300px;
+border-radius: 1rem;
+padding-left: 40px;
+padding-right: 40px;
+margin-right: 15px;
+padding: 30px;
+}
+
+.mission {
+    border: 1px black solid;
+    width: 300px;
+    border-radius: 1rem;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding: 30px;
+   
+    /* height: 150px; */
+    /* text-align: center; */
+}
+
+.another-container{
+    display: flex;
+    flex-direction: row;
+    border: 1px slategrey solid;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    height: 350px;
+    background-color: slategrey;
+}
+
+h5{
+    font-size: 15px;
+    
+}
+
+.safety-icon {
+    padding-top: 15px;
+    
+    
+}
+.safety {
+    border: 1px rgba(112, 158, 207, 0.822) solid;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-left: 40px;
+    padding-right: 10px;
+    color: aliceblue;
+    background-color: rgba(112, 158, 207, 0.822) ;
+    
+}
+h6{
+    font-size: 15px;
+}
+.teamwork {
+    border: 1px rgba(112, 158, 207, 0.822) solid;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-left: 40px;
+    padding-right: 8px;
+    padding-bottom: 30px;
+    color: aliceblue;
+
+    background-color: rgba(112, 158, 207, 0.822);
+}
+
+.community {
+    border: 1px rgba(112, 158, 207, 0.822) solid;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-left: 40px;
+    color: aliceblue;
+    padding-top: 20px;
+    padding-right: 10px;
+    
+    background-color:  rgba(112, 158, 207, 0.822);
+}
+
+.third-container {
+    display: flex;
+    border: 8px skyblue solid;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+.our-stories-section {
+    border: 1px ;
+    padding-left: 80px;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.stories-section {
+    font-size: 25px;
+    font-weight: 100;
+    
+}
+
+.missed-trip-heading {
+    color: black;
+    font-style: normal;
+}
+.missed-trip-section {
+    border: 1px ;
+    /* padding-left: 30px;
+    padding-right: 30px; */
+    width: 600px;
+}

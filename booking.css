@@ -446,3 +446,22 @@ footer{
         column-gap: 30px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* misc */
+.payFareLink{
+  /* width: 200px; */
+  height: 100%;
+  text-decoration: none;
+  color: black;
+}

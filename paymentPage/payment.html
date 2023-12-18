@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="payment.css">
+    <title>Payment</title>
+</head>
+<body>
+    <main class="background">
+
+        <section class="imageBackground">
+
+            <section class="FareSummary">
+                <section class="FareSummaryInner">
+                    <h2>Summary of Bus Fare</h2>
+                    <p>No. of Adult is <span>2</span>: <span class="price">49,400</span></p>
+                    <p>No. of Child is <span>2</span>: <span class="price">39,800</span></p>
+                    <hr>
+                    <h1>Total is <span>:</span> <span class="TotPrice">89,200</span> </h1>
+                </section>
+
+                <section class="PaymentMethodContainer">
+                    <h2> Payment Methods</h2>
+
+                    <button onclick="payMethod(1)" class="paySelect"> Pay with Card
+                    <!-- <label for="card">Card</label>
+                    <input type="radio" name="card" id="cardPayment" title="." value="radio1" placeholder="." onclick="payMethod(1)"> -->
+                    </button>
+
+                    
+                    <button onclick="payMethod(2)" class="paySelect"> Pay by bank transfer
+                    <!-- <label for="bankT">Bank Transfer</label>
+                        <input type="radio" name="bankT" id="bankTransfer" title="." value="radio2" placeholder="." onclick="payMethod(2)"> -->
+                    </button>
+
+                    <button onclick="payMethod(3)" class="paySelect"> Paypal
+                        <!-- <label for="PayPal">PayPal</label>
+                        <input type="radio" name="PayPal" id="payPal" title="." placeholder="." onclick="payMethod(3)"> -->
+                    </button>
+
+                    <button onclick="payMethod(4)" class="paySelect"> USSD
+                        <!-- <label for="USSD">USSD</label>
+                        <input type="radio" name="USSD" id="usSD" title="." placeholder="." onclick="payMethod(4)"> -->
+                    </button>
+
+                    <button onclick="payMethod(5)" class="paySelect"> QR Code
+                        <!-- <label for="QR">QR Code</label>
+                        <input type="radio" name="QR" id="QR-Code" title="." placeholder="." onclick="payMethod(5)"> -->
+                    </button>
+
+                </section>
+
+            </section>
+
+            <section class="PaymentDetails">
+                <section class="card-details">
+                    <p class="down">Name on Card</p>
+                    <input type="text" name="" id="" title="." class="curveInput" placeholder="Card Name" required>
+
+                    <p class="down">Card Number</p>
+                    <input type="number" name="" id="" title="." class="curveInput" placeholder="1234 1234 1234 1234" required>
+
+                    <div class="last-info">
+                        <p>Valid till</p>
+                        <input type="text" name="" id="" title="."  class="curveInput" placeholder="MM/YY" required>
+
+                        <p>CVV</p>
+                        <input type="number" name="" id="" title="." class="curveInput" placeholder="---" required>
+                    </div>
+
+                    <br>
+
+                    <button type="submit" class="payButton" onclick="displayAcknowledge(1)">Proceed To Payment</button>
+                </section>
+
+                <section class="transferDetails">
+                    <h1> Please Send to this Account Number</h1>
+                    <h1> Bank: Opay</h1>
+                    <h1>Account Number: 123456789</h1>
+                    <h2>and we will confirm your transfer and send the receipt to your email</h2>
+
+                    <p>Your Account Name</p>
+                    <input type="text" name="" id="" title="." class="curveInput" placeholder="Card Name" required>
+
+                    <p>Your Email Address or Whatsapp phone number</p>
+                    <input type="text" name="" id="" title="." class="curveInput" placeholder="Email or Phone Number(must be your Whatsapp contact)" required>
+
+                    <button type="submit" class="payButton" id="payButton2" onclick="displayAcknowledge(1)">I have paid</button>
+                </section>
+
+                <section class="OtherMethods">
+                    <h1>Not Available at the moment. Please use other methods</h1>
+                </section>
+            </section>
+
+        </section>
+
+
+    </main>
+    <section class="acknowledge">
+       <h1> Success.</h1>
+       <h2> Payment Successful </h2> 
+       <a href="../Booking.html" > Continue</a>
+    </section>
+
+<script src="payment.js"></script>
+</body>
+</html>

@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0px;
+}
+body{
+    display: grid;
+    place-items: center;
+}
+main.background{
+    height: 1200px;
+    width: 1000px;
+    background: linear-gradient(128deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 10%, rgb(123, 176, 255) 10%, rgba(13,27,80,1) 45%, rgb(123, 176, 255) 45%, rgba(9,32,228,1) 100%); 
+
+
+    display: flex;
+    align-items: center;
+}
+section.imageBackground{
+    background-image: url(../images/unsplash_btqhtcEGziw.png);
+    height: 800px;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.FareSummary{
+    background-color: rgba(152, 152, 192, 0.692);
+    border-radius: 30px;
+    height: 75%;
+
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    width: 85%;
+    justify-self: right;
+}
+.FareSummaryInner {
+    display: grid;
+    background-color: rgb(0, 153, 255);
+    width: 100%;
+    place-items: center;
+    border-radius: 30px 30px 0 0;
+    margin-bottom: 20px;
+}
+.FareSummaryInner h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    color: white;
+}
+.FareSummaryInner p{
+    font-size: 1.2rem;
+}
+.price{
+    margin-left: 30px;
+}
+.FareSummaryInner hr{
+    width: 30%;
+    justify-self: right;
+    position: relative;
+    right: 20%;
+}
+.FareSummaryInner h1{
+    font-size: 1.5rem;
+    margin-top: 30px;
+
+}
+.TotPrice{
+    font-size: 2rem;
+    margin-left: 50px;
+}
+
+
+.PaymentMethodContainer h2{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: white;
+}
+.PaymentDetails{
+    background-color: rgba(152, 152, 192, 0.692);
+    border-radius: 30px;
+    height: 80%;
+
+    display: grid;
+    place-items: center;
+    z-index: 2;
+    box-shadow: 0 0 10px black;
+    width: 95%;
+
+    position: relative;
+    right: 30px;
+}
+.down{
+    height: fit-content;
+    position: relative;
+    top: 50%;
+}
+
+
+
+
+.last-info{
+    display: flex;
+    column-gap: 10px;
+}
+
+.paySelect{
+    background-color: blue;
+    width: 200px;
+    height: 50px;
+    display: block;
+    margin-bottom: 10px;
+    border-style:outset;
+    border-radius: 30px;
+    border-color: blue;
+
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: white;
+    
+
+}
+
+
+.card-details{
+    /* box-sizing: content-box; */
+    display: grid;
+    flex-direction: column;
+    width: 85%;
+    height: 600px;
+    color: white;
+}
+.transferDetails{
+    display: none;
+    height: 600px;
+    color: white;
+    padding: 20px;
+}
+.OtherMethods{
+    color: white;
+    display: none;
+}
+
+.curveInput{
+    border-radius: 10px;
+    height: 50px;
+}
+.payButton{
+    background-color: #F69F46;
+    color: white;
+    height: 50px;
+    border-style: none;
+    border-radius: 20px;
+    width: 100%;
+}
+#payButton2{
+    width: 100%;
+}
+
+.acknowledge{
+    width: 80svw;
+    height: 500px;
+    position: fixed;
+    top: 0px;
+    margin-top: 50px;
+    z-index: 3;
+    border-radius: 20px;
+
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(240, 248, 255);
+}
+.acknowledge>a{
+    text-decoration: none;
+    color: aliceblue;
+    background-color: rgb(35, 35, 158);
+    border-radius: 20px;
+    width: 100px;
+    height: 25px;
+    display: grid;
+    place-items: center;
+}
