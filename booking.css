@@ -18,7 +18,7 @@ html {
   
   .logo{
     width: 100px;
-    height: 140px;
+    height: 80px;
   }
   /* .top{
     height: 6rem;
@@ -30,6 +30,7 @@ html {
     overflow: hidden;
     gap: 1.5rem;
     place-items: center;
+    width: 85svw;
   
     grid-template-columns: repeat(9, 1fr);
   }
