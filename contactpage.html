@@ -3,16 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    
+    <link rel="stylesheet" href="./about.css">
+    <link rel="stylesheet" type="text/css" href="contact.css">
+
+ <link rel="icon" type="image/png" sizes="32x32" 
+ href="images/BRAND LOGO Mobile.png">
+    <title>Contact</title>
 </head>
 <body>
     <div class="top">
         <nav>
             <div class="logo"><img src="image/BRAND LOGO 1.png" alt="logo"/></div>
             <ul>
-                <li><a href="Homepage.html">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Booking.html">Services</a></li>
+                <li><a href="about page.html">About</a></li>
                 <li><a href="contactpage.html">Contacts</a></li>
             </ul>
              <div>
@@ -22,7 +28,7 @@
         </nav>
     </div>
 
-    <h1 class="Contact">CONTACT US</h1>
+    <h1 class="ContactBar">CONTACT US</h1>
 
     <div class="icons">
         <img src="" alt="location_icon">
@@ -97,61 +103,96 @@
 </body>
 
 <footer>
-    <b class="feedbacks">Feedbacks</b>
-    <p>
-    <hr class="hr1">
-  </p>
-    <div class="text_box">
-      <input type="text" id="text_box1" placeholder="Title" required>
-      <input type="text" id="text_box2" placeholder="Enter Name" required>
-      <input type="text" id="text_box3" placeholder="Enter Email" required>
-      <input type="text" id="text_box4" placeholder="" required>
-    </div> 
 
-    <b class="social_media">Social media</b>
-    <p>
-      <hr class="hr2">
-    </p>
-    <div class="social_media_icons">
-      <div>
-       <img src="" alt="facebook_icon"> <p>Facebook</p>
-      </div>
 
-      <div>
-          <img src="" alt="Twitter_icon"> <p>Twitter</p>
-         </div>
 
-         <div>
-          <img src="" alt="Instagram_icon"> <p>Instagram</p>
-         </div>
+    <div class="feedback-section">
+        <b class="feedbacks">Feedbacks</b>
+        <div class="hr"></div>
+
+        <form class="text_box">
+          <input type="text" id="text_box1" placeholder="Title" required>
+          <input type="text" id="text_box2" placeholder="Enter Name" required>
+          <input type="text" id="text_box3" placeholder="Enter Email" required>
+          <input type="text" id="text_box4" placeholder="." required>
+          <button type="submit" class="submitBtn">submit</button>
+        </form> 
 
     </div>
 
-    <b class="Contact_Us">Contact Us</b>
-    <p>
-      <hr class="hr3">
-    </p>
-    <div class="Contact_icons">
-      <div>
-       <img src="" alt="time_icon"> <p>0500am-0900pm</p>
-      </div>
 
-      <div>
-          <img src="" alt="phone_icon"> <p>(+234) 6000-131-500</p>
-         </div>
 
-         <div>
-          <img src="" id="message_icon" alt="message_icon"> <p>(+234) 5000-461-300</p>
-         </div>
 
-         <div>
-          <img src="" id="email_icon" alt="email_icon"> <p>travulsphere@gmail.com</p>
-         </div>
+    <div class="media-section">
+
+        <b class="social_media">Social media</b>
+          <div class="hr"></div>
+
+        <div class="social_media_icons">
+          <div class="sm_icons">
+           <img src="image icons/icons8-facebook-48.png" alt="facebook_icon"> 
+           <p>Facebook</p>
+          </div>
+
+          <div class="sm_icons">
+              <img src="image icons/icons8-twitter.gif" alt="Twitter_icon">
+               <p>Twitter</p>
+             </div>
+
+             <div class="sm_icons">
+              <img src="image icons/icons8-instagram.gif" alt="Instagram_icon"> 
+              <p>Instagram</p>
+             </div>
+
+        </div>
+    </div>
+
+
+    <div class="contact-section">
+        <b class="Contact_Us">Contact Us</b>
+        <div class="hr"></div>
+
+        <div class="Contact_icons">
+          <div>
+           <img src="image icons/icons8-time.gif" alt="time_icon"> <p>0500am-0900pm</p>
+          </div>
+
+          <div>
+              <img src="image icons/icons8-phone.gif" alt="phone_icon"> <p>(+234) 6000-131-500</p>
+             </div>
+
+             <div>
+              <img src="image icons/icons8-message.gif" id="message_icon" alt="message_icon"> <p>(+234) 5000-461-300</p>
+             </div>
+
+             <div>
+              <img src="image icons/icons8-email.gif" id="email_icon" alt="email_icon"> <p>travulsphere@gmail.com</p>
+             </div>
+
+        </div>
 
     </div>
 
-    <div id="submit_button">
-      <button type="submit">submit</button>
+    <div class="quickLinksSection">
+        <div class="kwiklinks">
+        <b>Quick Links</b>
+        <div class="hr"></div>
     </div>
-  </footer>
+
+        <a href="index.html">Home</a>
+        <a href="about.css">About</a>
+        <a href="Booking.html">Services</a>
+        <a href="contactpage.html">Contact</a>
+        <a href="#">Terminals</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">FAQs</a>
+        <a href="#">Terms and Conditions</a>
+
+    </div>
+
+        <!-- <div id="submit_button">
+          <button type="submit">submit</button>
+        </div> -->
+      </footer>
+
 </html>

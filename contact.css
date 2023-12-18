@@ -1,0 +1,66 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+.logo{
+    width: 100px;
+    height: 80px;
+  }
+  /* .top{
+    height: 6rem;
+  } */
+  .top>nav{
+    display: grid;
+    height: 5rem;
+    background-color: white;
+    overflow: hidden;
+    gap: 1.5rem;
+    place-items: center;
+    width: 85svw;
+  
+    grid-template-columns: repeat(9, 1fr);
+  }
+  .top>nav>ul{
+    list-style-type: none;
+    display: flex;
+    column-gap: 1.5rem;
+    align-items: center;
+  }
+  .top>nav>ul>li>a{
+    text-decoration: none;
+    color: black;
+  }
+  
+  .signUpContainer{
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+  
+    background-color: blue;
+    border-radius: 30px;
+    width: 100px;
+    height: 30px;
+    color: white;
+    
+  }
+  
+  .nav-span{
+    grid-column: 4/8;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .Profile{
+    width: 50px;
+  }
+  .conpressedNavIcons{
+    display: none;
+  }
+  
+  .mobile-nav{
+    display: none;
+  }
+  h1.ContactBar{
+    background: linear-gradient(128deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 10%, rgb(123, 176, 255) 10%, rgba(13,27,80,1) 45%, rgb(123, 176, 255) 45%, rgba(9,32,228,1) 100%); 
+
+  }
+ 
