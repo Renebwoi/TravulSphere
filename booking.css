@@ -312,6 +312,12 @@ footer{
     color: black;
   }
 
+  /* #departDestin span:nth-of-type(1){
+    color: red;
+  } */
+ #dateOption{
+    color: rebeccapurple;
+  }
 
 
 @media screen and (max-width: 995px){
