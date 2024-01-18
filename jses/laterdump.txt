@@ -1,3 +1,6 @@
+https://mocki.io/v1/288dfb02-b4aa-46bd-9506-970a138059f6
+
+
 let busArray = ["Toyota 5th bus", "Bosco 1st bus", "Big Coach 1st Bus"];
 let busDepartureState = ["Abraka", "Amodi", "Enugu"];
 let busDestinationState = ["Lagos", "Atunpe", "Anambra"];
@@ -9,7 +12,7 @@ let departureTime = ["6:00","8:00","10:00"];
 
 let busListDiv = document.querySelector(".busList");
 
-
+//try using a cover func with the needed params here
 let MainCount = 0;
 for (let i=0; i<busArray.length;i++){
 
@@ -95,10 +98,30 @@ function ModifyChoices() {
 //with enough seats left to accomodate them.
 
 
-// fetch('data.json')// code to fetch
-// .then(console.log(res))
-// .then(res => res.json())//code to parse it
-// .then(data => {
-//     console.log(data.bookingData.busArray);
-//     firstDataSet(data.bookingData)//code to export the needed data
-// })
+
+
+
+
+
+
+
+
+
+
+
+
+// let info = "data.json";
+console.log("hello")
+
+fetch('data.json')// code to fetch
+.then(res => res.json())//code to parse it
+.then(data => {
+    console.log(data.bookingData.busArray);
+    firstDataSet(data.bookingData)//code to export the needed data
+})
+
+function firstDataSet(datr) {
+    console.log("data set is " + datr.busArray[0])
+}
+
+console.log("all done")

@@ -1,0 +1,12 @@
+{
+    "bookingData": {
+        "busArray" : ["Toyota 5th bus", "Bosco 1st bus", "Big Coach 1st Bus"],
+        "busDepartureState" : ["Abraka", "Amodi", "Enugu"],
+        "busDestinationState" : ["Lagos", "Atunpe", "Anambra"],
+        "busDestinationLGA" : ["Oponkwu", "Sumaka", "Oba"],
+        "busAvailableSeats" : [5, 3, 4],
+        "adultPrice" : ["31,825", "37,825", "15,500"],
+        "childPrice" : ["21,825", "17,825", "7,600"],
+        "departureTime" : ["6:00","8:00","10:00"]
+    }
+}
