@@ -20,7 +20,7 @@ const validate = () => {
 //  .then(data => console.log(data) )
  .then( 
     data => {if(+data === 1) {
-    window.location.href = "index2.html";
+    window.location.href = "/admin_busdetails/index2.html";
     console.log("yay")} 
     else  {
     alert("invalid parameters");

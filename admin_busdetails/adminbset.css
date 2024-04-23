@@ -1,0 +1,38 @@
+/* css for the bus adding page */
+body{
+    display: grid;
+    place-items: center;
+    background-color: blueviolet;
+    height: max-content;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+.rqst{
+    display: grid;
+    place-items: center;
+    background-color: wheat;
+    height: max-content;
+
+    grid-template-columns: 1fr 1fr;
+}
+.rqstBtn{
+    width: 50%;
+    margin: 10px;
+    text-align: center;
+}
+
+.resultBox{
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    background-color: cadetblue;
+    width: 30vw;
+    height: max-content;
+    overflow-y: scroll;
+    border-radius: 20px;
+    padding: 10px;
+}

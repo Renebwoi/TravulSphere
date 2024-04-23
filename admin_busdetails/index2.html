@@ -3,9 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="Stylesheet" type="text/css" href="./adminbset.css">
+    <title>Bus Reservation Form</title>
 </head>
 <body>
-    <h1>Hello, You are in</h1>
+    <h1>Bus Reservation Form</h1>
+    <p>This page is for adding and removing buses</p>
+    <form class="container">
+        <!-- Bus Array -->
+        <label for="busArray">Bus Name:</label>
+        <input type="text" id="busArray" name="busArray" required><br>
+
+        <!-- Bus Departure State -->
+        <label for="busDepartureState">Departure State:</label>
+        <input type="text" id="busDepartureState" name="busDepartureState" required><br>
+
+        <!-- Bus Destination State -->
+        <label for="busDestinationState">Destination State:</label>
+        <input type="text" id="busDestinationState" name="busDestinationState" required><br>
+
+        <!-- Bus Destination LGA -->
+        <label for="busDestinationLGA">Destination Local Government Area (LGA):</label>
+        <input type="text" id="busDestinationLGA" name="busDestinationLGA" required><br>
+
+        <!-- Bus Available Seats -->
+        <label for="busAvailableSeats">Available Seats:</label>
+        <input type="number" id="busAvailableSeats" name="busAvailableSeats" required><br>
+
+        <!-- Adult Price -->
+        <label for="adultPrice">Adult Price:</label>
+        <input type="number" id="adultPrice" name="adultPrice" required><br>
+
+        <!-- Child Price -->
+        <label for="childPrice">Child Price:</label>
+        <input type="number" id="childPrice" name="childPrice" required><br>
+
+        <!-- Departure Time -->
+        <label for="departureTime">Departure Time (24-hour format):</label>
+        <input type="text" id="departureTime" name="departureTime" pattern="^(0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]$" required>
+        <small>Example: 14:30</small><br>
+
+        <!-- Submit Button -->
+        <div class="rqst">
+        <button class="rqstBtn" type="button" onclick="submitDetails()">Submit</button>
+        <button class="rqstBtn" type="button" onclick="updateDetails()">Update</button>
+        <button class="rqstBtn" type="button" onclick="getallDetails()">Getall details</button>
+        <button class="rqstBtn" type="button" onclick="deleteDetails()">Delete Details</button>
+        <!-- done and dusted -->
+        </div>
+
+    </form>
+
+    <article class="resultBox">
+        <!-- to display the result -->
+        <h3>The result wiil appear here</h3>
+    </article>
+<script src="adminbset.js"></script>
 </body>
 </html>
